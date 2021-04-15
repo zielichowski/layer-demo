@@ -46,6 +46,6 @@ Since Kotlin miss this nice feature we have to use the `internal` keyword which 
 # Covered user stories
 - Domain model covers mostly the happy path of all user stories
 - In the `ArticleApplicationService` I implemented the following user stories:
-  - 4. As a journalist, I respond to suggestions by making the suggested changes
-  - 5. As a copywriter, I resolve suggestions that the journalist applied
-  - 6. As a journalist, I can publish the article after all suggestions are resolved
+  - As a journalist, I respond to suggestions by making the suggested changes
+  - As a copywriter, I resolve suggestions that the journalist applied
+  - As a journalist, I can publish the article after all suggestions are resolved
