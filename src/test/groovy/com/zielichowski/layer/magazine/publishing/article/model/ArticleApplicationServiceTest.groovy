@@ -1,7 +1,6 @@
 package com.zielichowski.layer.magazine.publishing.article.model
 
 import com.zielichowski.layer.magazine.publishing.article.api.*
-import com.zielichowski.layer.magazine.publishing.article.infrastructure.persistence.InMemoryArticleRepository
 import com.zielichowski.layer.magazine.publishing.common.*
 import spock.lang.Shared
 import spock.lang.Specification
@@ -20,7 +19,7 @@ class ArticleApplicationServiceTest extends Specification {
     @Shared
     def topicId = new TopicId(UUID.randomUUID().toString())
     @Shared
-    def repo = new InMemoryArticleRepository()
+    def repo = new InMemoryArticleRepositoryMock()
 
     def events = Mock(ArticleEvents)
 
